@@ -1,12 +1,124 @@
-h6 {
-    color: blue;
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
-
 body {
-    background-color: darkorchid;
+  background-color: darkorchid;
+
+}
+header {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  max-width: 1280px ;
+  margin: auto;
+}
+header h2 {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+header .logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-div {
-    margin: 0px;
-    padding: 0px auto 0px auto;
+.logos img {
+  width: 100px;
+  height: 60px;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+header nav ul li a {
+  color: #ccc;
+}
+
+main {
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
+}
+main h3 {
+  margin-bottom: 20px;
+  color: #ccc;
+  padding-left: 200px;
+}
+main img {
+  width: 90%;
+  height: 600px;
+  display: block;
+  margin: auto;
+  object-fit: cover;
+}
+.sentence {
+  margin: 20px 0;
+  text-align: center;
+}
+.sentence p {
+  line-height: 2;
+  font-size: 18px;
+  color: #ccc;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+form .input-box {
+  margin-bottom: 15px;
+}
+form .input-box span {
+  color: #ccc;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+form .input-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+form .btn {
+  text-align: center;
+}
+form .btn button {
+  padding: 14px 50px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+form .btn button:hover {
+  background-color: orangered;
+  color: #fff;
+}
+footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+footer p {
+  font-size: 12px;
+  color: blue;
+}
+
+@media screen and (max-width: 650px){
+    form {
+      width: 100%;
+    }
+    main h3 {
+      padding: 0;
+    }
+    main img {
+      width: 100%;
+      height: fit-content;
+    }
 }
